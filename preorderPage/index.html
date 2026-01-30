@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-Order Green Goat Gloves | Circular Supply</title>
+    <!-- CSS Import -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/crossFile.css" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+</head>
+<body>
+    <nav class="navbar scrolled">
+        <div
+            class="logo-container"
+            onclick="window.location.href = '/';"
+        >
+            <img src="/logo.webp" alt="Circular Supply" />
+        </div>
+        <div class="mobile-menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="nav-links">
+            <a href="/about" class="nav-link">About</a>
+            <a href="/services" class="nav-link">Services</a>
+            <a href="/pre-order" class="nav-link">Pre Order</a>
+            <a href="/contact" class="contact-btn">Get Started</a>
+        </div>
+    </nav>
+
+    <main class="preorder-main">
+        <!-- Hero Section -->
+        <section class="preorder-hero">
+            <div class="preorder-hero-content">
+                <h1 class="preorder-title">Pre-Order Your Green Goat Gloves</h1>
+                <p class="preorder-subtitle">Premium Safety. Sustainable Materials. Built to Last.</p>
+
+                <div class="preorder-product">
+                    <div class="product-image">
+                        <img src="/img/gloves.jpg" alt="Green Goat Gloves">
+                    </div>
+
+                    <div class="product-details">
+                        <div class="product-specs">
+                            <h2 class="specs-title">Product Specifications</h2>
+                            <ul class="specs-list">
+                                <li class="spec-item">
+                                    <span class="spec-name">Impact Level:</span>
+                                    <span class="spec-value">2</span>
+                                </li>
+                                <li class="spec-item">
+                                    <span class="spec-name">Cut Resistance:</span>
+                                    <span class="spec-value">Level 8</span>
+                                </li>
+                                <li class="spec-item">
+                                    <span class="spec-name">Material:</span>
+                                    <span class="spec-value">Goat Skin Leather (Dyed Black with Natural Dyes)</span>
+                                </li>
+                                <li class="spec-item">
+                                    <span class="spec-name">Eco-Friendly:</span>
+                                    <span class="spec-value">Tanned with vegetable oil (No toxic chemicals)</span>
+                                </li>
+                                <li class="spec-item">
+                                    <span class="spec-name">Oil & Stain Resistant:</span>
+                                    <span class="spec-value">Oil-blocker additive extends durability</span>
+                                </li>
+                                <li class="spec-item">
+                                    <span class="spec-name">Enhanced Protection:</span>
+                                    <span class="spec-value">EVA Foam Padding on the palm & wrist</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="product-selling-points">
+                            <h2 class="selling-points-title">Key Benefits</h2>
+                            <ul class="selling-points-list">
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Unlike traditional white gloves, Green Goat gloves hide dirt & stains, extending usability</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Safer for workers & the planet with eco-friendly processing</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="product-price-box">
+                            <div class="price-amount">$27.50 <span>per pair</span></div>
+                            <div class="price-promotion">
+                                <i class="fas fa-gift"></i>
+                                <span>All pre-orders include a free PPE recycling bin with delivery</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="how-it-works">
+            <h2 class="section-title">How It Works</h2>
+
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3 class="step-title">Place Your Pre-Order</h3>
+                    <p class="step-description">Choose your quantity below</p>
+                </div>
+
+                <div class="step-divider">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-icon">
+                        <i class="fas fa-box-open"></i>
+                    </div>
+                    <h3 class="step-title">We Process Your Order</h3>
+                    <p class="step-description">Orders ship with one of our PPE Recycling Bins for a seamless sustainability solution</p>
+                </div>
+
+                <div class="step-divider">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3 class="step-title">Your Gloves Arrive</h3>
+                    <p class="step-description">Delivered straight to your facility</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Order Form Section -->
+        <section class="order-form-section">
+            <div class="form-container">
+                <h2 class="form-title">Complete Your Pre-Order</h2>
+                <p class="form-subtitle">Pre-Orders Ship in 1-2 Weeks. (Stock depending)</p>
+
+                <form id="preorder-form" class="preorder-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="address">Shipping Address</label>
+                        <textarea id="address" name="address" rows="3" required></textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="quantity">Order Quantity (Pairs)</label>
+                            <select id="quantity" name="quantity" required>
+                                <option value="">Select quantity</option>
+                                <option value="50">50 Pairs</option>
+                                <option value="100">100 Pairs</option>
+                                <option value="250">250 Pairs</option>
+                                <option value="500">500 Pairs</option>
+                                <option value="custom">Custom Amount</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group custom-quantity-group" style="display: none;">
+                            <label for="custom-quantity">Custom Quantity</label>
+                            <input type="number" id="custom-quantity" name="custom-quantity" min="1">
+                        </div>
+                    </div>
+
+                    <!-- reCAPTCHA Widget -->
+                    <div class="form-group full-width">
+                        <div class="g-recaptcha" data-sitekey="6LcroggsAAAAAJpKfjBRX89wS0mV8LKzLA2aTNzq"></div>
+                        <div class="recaptcha-error" style="color: #ff4d4d; font-size: 0.85rem; margin-top: 10px; display: none;">
+                            Please verify that you're not a robot
+                        </div>
+                    </div>
+
+                    <div class="form-submit">
+                        <button type="submit" class="preorder-button">
+                            Pre-Order Now
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <!-- Background Elements -->
+        <div class="footer-background">
+            <div class="footer-pattern"></div>
+            <div class="footer-accent"></div>
+        </div>
+        <div class="footer-line"></div>
+
+        <div class="footer-container">
+            <!-- Footer Logo -->
+            <div class="footer-logo">
+                <img src="/CS_Logo_Colour_2.png" alt="Circular Supply" />
+            </div>
+
+            <!-- Footer Content Grid -->
+            <div class="footer-content">
+                <!-- Company Information -->
+                <div class="footer-company">
+                    <p class="company-description">
+                        Founded by Métis entrepreneur Riley Dewan, Circular
+                        Supply is committed to transforming PPE waste
+                        management into a sustainable, circular economy.
+                    </p>
+
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (587) 201-8090</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>riley@circularsupply.org</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-nav">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/services">Our Services</a></li>
+                        <li><a href="/contact">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services Navigation -->
+                <div class="footer-nav">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li>
+                            <a href="/services#gloves">Premium Gloves</a>
+                        </li>
+                        <li>
+                            <a href="/services#reporting">ESG Reporting</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Subscription -->
+                <div class="footer-subscribe">
+                    <h3>Stay Updated</h3>
+                    <p class="subscribe-description">
+                        Subscribe to our newsletter to receive the latest
+                        updates on sustainable initiatives, product
+                        innovations, and industry insights.
+                    </p>
+
+                    <form class="subscribe-form" id="newsletter-form">
+                        <input
+                            type="email"
+                            class="subscribe-input"
+                            placeholder="Your email address"
+                            required
+                        />
+                        <button type="submit" class="subscribe-button">
+                            Subscribe
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </form>
+
+                    <!-- Social Media Links -->
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/company/circular-supply-inc" target="_blank" class="social-link"
+                            ><i class="fab fa-linkedin-in"></i
+                        ></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    &copy; 2025 Circular Supply. All rights reserved.
+                    Proudly Indigenous owned.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../crossFile/crossfile.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

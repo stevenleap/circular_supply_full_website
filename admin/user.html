@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Dashboard Header -->
+        <header>
+            <h1>My Subscription</h1>
+            <button id="logoutBtn">Logout</button>
+        </header>
+        <!-- User Subscription Info -->
+        <div class="subscription-info">
+            <div class="info-card">
+                <h3>Current Plan</h3>
+                <p id="planType"></p>
+            </div>
+
+            <div class="info-card">
+                <h3>Status</h3>
+                <p id="subStatus"></p>
+            </div>
+
+            <div class="info-card">
+                <h3>Next Delivery</h3>
+                <p id="nextDelivery"></p>
+            </div>
+            <div class="info-card">
+                <h3>Tote Scheduled Pickup</h3>
+                <p id="toteScheduledPickup"></p>
+            </div>
+        </div>
+        <!-- User Actions -->
+        <div class="action-buttons">
+            <button id="skipBtn">Skip Next Month</button>
+            <button id="pauseBtn">Pause Subscription</button>
+            <button id="pickupBtn">Schedule Tote Pickup</button>
+        </div>
+        <!-- Pickup Selection -->
+        <div id="pickupModal" class="modal">
+            <div class="modal-content">
+                <h2>Schedule Tote Pickup</h2>
+                <input type="date" id="pickupDate">
+                <button id="confirmPickup">Schedule</button>
+                <button id="closeModal">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <script src="user.js"></script>
+</body>
+</html>

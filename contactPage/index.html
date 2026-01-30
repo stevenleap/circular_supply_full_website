@@ -1,0 +1,646 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Circular Supply Inc - Sustainable Construction Tools</title>
+        <!-- CSS Import -->
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="/crossFile.css" />
+        <!-- Font Awesome Icons API -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        />
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    </head>
+    <body>
+        <nav class="navbar scrolled">
+            <div class="logo-container" onclick="window.location.href = '/';">
+                <img src="/logo.webp" alt="Circular Supply" />
+            </div>
+            <div class="mobile-menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-links">
+                <a href="/about" class="nav-link">About</a>
+                <a href="/services" class="nav-link">Services</a>
+                <a href="/pre-order" class="nav-link">Pre Order</a>
+                <a href="/contact" class="contact-btn">Get Started</a>
+            </div>
+        </nav>
+
+        <!-- Interactive Particle Universe -->
+        <div class="circular_contact_universe">
+            <canvas
+                id="circular_contact_particles_canvas"
+                class="circular_contact_particles_canvas"
+            ></canvas>
+            <div
+                id="circular_contact_neural_interface"
+                class="circular_contact_neural_interface"
+            ></div>
+        </div>
+
+        <!-- Main Content Container -->
+        <div class="circular_contact_container">
+            <div class="circular_contact_content_wrapper">
+                <!-- Contact Header -->
+                <header class="circular_contact_header">
+                    <div class="circular_contact_header_content">
+                        <span class="circular_contact_eyebrow"
+                            >Connect With Us</span
+                        >
+                        <h1 class="circular_contact_title">
+                            Join the Circular Movement
+                        </h1>
+                        <p class="circular_contact_subtitle">
+                            Let's Talk Sustainability. Fill out the form below,
+                            and we'll get back to you ASAP.
+                        </p>
+                    </div>
+                </header>
+
+                <!-- Interactive Contact Platform -->
+                <div class="circular_contact_platform">
+                    <div class="circular_contact_platform_container">
+                        <!-- Hologram Grid Effect -->
+                        <div class="circular_contact_hologram_grid"></div>
+
+                        <!-- Two Column Layout -->
+                        <div class="circular_contact_columns">
+                            <!-- Contact Form Column -->
+                            <div class="circular_contact_form_column">
+                                <div class="circular_contact_form_glow"></div>
+
+                                <div class="circular_contact_form_header">
+                                    <h2 class="circular_contact_form_title">
+                                        Get In Touch
+                                    </h2>
+                                    <p
+                                        class="circular_contact_form_description"
+                                    >
+                                        Let us know how we can help your
+                                        business embrace sustainability while
+                                        reducing costs.
+                                    </p>
+                                </div>
+
+                                <form
+                                    class="circular_contact_form"
+                                    id="circular_contact_form"
+                                    onsubmit="return false;"
+                                >
+                                    <!-- Name Input -->
+                                    <div class="circular_contact_form_group">
+                                        <input
+                                            type="text"
+                                            id="name"
+                                            class="circular_contact_form_field"
+                                            placeholder="Your Name"
+                                        />
+                                        <label
+                                            for="name"
+                                            class="circular_contact_form_label"
+                                            >Your Name</label
+                                        >
+                                    </div>
+
+                                    <!-- Email Input -->
+                                    <div class="circular_contact_form_group">
+                                        <input
+                                            type="email"
+                                            id="email"
+                                            class="circular_contact_form_field"
+                                            placeholder="Your Email"
+                                        />
+                                        <label
+                                            for="email"
+                                            class="circular_contact_form_label"
+                                            >Your Email</label
+                                        >
+                                    </div>
+
+                                    <!-- Company Input -->
+                                    <div class="circular_contact_form_group">
+                                        <input
+                                            type="text"
+                                            id="company"
+                                            class="circular_contact_form_field"
+                                            placeholder="Your Company"
+                                        />
+                                        <label
+                                            for="company"
+                                            class="circular_contact_form_label"
+                                            >Your Company</label
+                                        >
+                                    </div>
+
+                                    <!-- Inquiry Type Select -->
+                                    <div class="circular_contact_form_group">
+                                        <div
+                                            class="circular_contact_form_select_container"
+                                        >
+                                            <select
+                                                id="inquiry"
+                                                class="circular_contact_form_select"
+                                            >
+                                                <option
+                                                    value=""
+                                                    disabled
+                                                    selected
+                                                >
+                                                    Select Inquiry Type
+                                                </option>
+                                                <option value="Premium PPE Gloves">
+                                                    Premium PPE Gloves
+                                                </option>
+                                                <option value="Recycling Program">
+                                                    Recycling Program
+                                                </option>
+                                                <option value="Sustainability Reporting">
+                                                    Sustainability Reporting
+                                                </option>
+                                                <option value="Partnership Opportunities">
+                                                    Partnership Opportunities
+                                                </option>
+                                                <option value="Other">
+                                                    Other
+                                                </option>
+                                            </select>
+                                            <i
+                                                class="fas fa-chevron-down circular_contact_form_select_arrow"
+                                            ></i>
+                                        </div>
+                                    </div>
+
+                                    <!-- Message Textarea -->
+                                    <div class="circular_contact_form_group">
+                                        <textarea
+                                            id="message"
+                                            class="circular_contact_form_field circular_contact_form_textarea"
+                                            placeholder="Your Message"
+                                            rows="5"
+                                        ></textarea>
+                                        <label
+                                            for="message"
+                                            class="circular_contact_form_label"
+                                            >Your Message</label
+                                        >
+                                    </div>
+
+                                    <!-- reCAPTCHA Widget -->
+                                    <div class="circular_contact_form_group">
+                                        <div class="g-recaptcha" data-sitekey="6LcroggsAAAAAJpKfjBRX89wS0mV8LKzLA2aTNzq"></div>
+                                        <div class="recaptcha-error" style="color: #ff4d4d; font-size: 0.85rem; margin-top: 5px; display: none;">
+                                            Please verify that you're not a robot
+                                        </div>
+                                    </div>
+
+                                    <!-- Submit Button -->
+                                    <div
+                                        class="circular_contact_form_submit_container"
+                                    >
+                                        <button
+                                            type="submit"
+                                            class="circular_contact_form_submit"
+                                            id="contact_submit_btn"
+                                        >
+                                            Send Message
+                                            <i
+                                                class="fas fa-paper-plane circular_contact_form_submit_icon"
+                                            ></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!-- Contact Info Column with 3D Cube -->
+                            <div class="circular_contact_info_column">
+                                <div class="circular_contact_cube_container">
+                                    <div
+                                        class="circular_contact_cube"
+                                        id="contact_info_cube"
+                                    >
+                                        <!-- Cube Front Face - Contact Info -->
+                                        <div
+                                            class="circular_contact_cube_face cube-front"
+                                        >
+                                            <h3
+                                                class="circular_contact_info_title"
+                                            >
+                                                Contact Information
+                                            </h3>
+
+                                            <div
+                                                class="circular_contact_info_content"
+                                            >
+
+                                                <!-- Phone Info -->
+                                                <div
+                                                    class="circular_contact_info_item"
+                                                >
+                                                    <div
+                                                        class="circular_contact_info_icon_container"
+                                                    >
+                                                        <i
+                                                            class="fas fa-phone-alt circular_contact_info_icon"
+                                                        ></i>
+                                                    </div>
+                                                    <div
+                                                        class="circular_contact_info_text"
+                                                    >
+                                                        <div
+                                                            class="circular_contact_info_label"
+                                                        >
+                                                            Call Us
+                                                        </div>
+                                                        <div
+                                                            class="circular_contact_info_value"
+                                                        >
+                                                            <a href="tel:+15872018090" class="contact-link">+1 (587) 201-8090</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Email Info -->
+                                                <div
+                                                    class="circular_contact_info_item"
+                                                >
+                                                    <div
+                                                        class="circular_contact_info_icon_container"
+                                                    >
+                                                        <i
+                                                            class="fas fa-envelope circular_contact_info_icon"
+                                                        ></i>
+                                                    </div>
+                                                    <div
+                                                        class="circular_contact_info_text"
+                                                    >
+                                                        <div
+                                                            class="circular_contact_info_label"
+                                                        >
+                                                            Email Us
+                                                        </div>
+                                                        <div
+                                                            class="circular_contact_info_value"
+                                                        >
+                                                            <a href="mailto:riley@circularsupply.org" class="contact-link">riley@circularsupply.org</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Social Links -->
+                                            <div
+                                                class="circular_contact_social_links"
+                                            >
+
+                                                <a href="https://www.linkedin.com/company/circular-supply-inc" target="_blank" class="circular_contact_social_link"
+                                                    ><i class="fab fa-linkedin-in"></i
+                                                ></a>
+                                            </div>
+                                        </div>
+
+                                        <!-- Cube Back Face - Business Hours -->
+                                        <div
+                                            class="circular_contact_cube_face cube-back"
+                                        >
+                                            <h3
+                                                class="circular_contact_info_title"
+                                            >
+                                                Business Hours
+                                            </h3>
+
+                                            <div
+                                                class="circular_contact_info_content"
+                                            >
+                                                <div
+                                                    class="circular_contact_info_item"
+                                                >
+                                                    <div
+                                                        class="circular_contact_info_icon_container"
+                                                    >
+                                                        <i
+                                                            class="fas fa-clock circular_contact_info_icon"
+                                                        ></i>
+                                                    </div>
+                                                    <div
+                                                        class="circular_contact_info_text"
+                                                    >
+                                                        <div
+                                                            class="circular_contact_info_label"
+                                                        >
+                                                            Monday - Friday
+                                                        </div>
+                                                        <div
+                                                            class="circular_contact_info_value"
+                                                        >
+                                                            9:00 AM - 5:00 PM
+                                                            PST
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div
+                                                    class="circular_contact_info_item"
+                                                >
+                                                    <div
+                                                        class="circular_contact_info_icon_container"
+                                                    >
+                                                        <i
+                                                            class="fas fa-clock circular_contact_info_icon"
+                                                        ></i>
+                                                    </div>
+                                                    <div
+                                                        class="circular_contact_info_text"
+                                                    >
+                                                        <div
+                                                            class="circular_contact_info_label"
+                                                        >
+                                                            Saturday
+                                                        </div>
+                                                        <div
+                                                            class="circular_contact_info_value"
+                                                        >
+                                                            10:00 AM - 2:00 PM
+                                                            PST
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div
+                                                    class="circular_contact_info_item"
+                                                >
+                                                    <div
+                                                        class="circular_contact_info_icon_container"
+                                                    >
+                                                        <i
+                                                            class="fas fa-clock circular_contact_info_icon"
+                                                        ></i>
+                                                    </div>
+                                                    <div
+                                                        class="circular_contact_info_text"
+                                                    >
+                                                        <div
+                                                            class="circular_contact_info_label"
+                                                        >
+                                                            Sunday
+                                                        </div>
+                                                        <div
+                                                            class="circular_contact_info_value"
+                                                        >
+                                                            Closed
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                class="circular_contact_hours_note"
+                                            >
+                                                After hours inquiries will be
+                                                responded to on the next
+                                                business day.
+                                            </div>
+
+                                            <div
+                                                class="circular_contact_cube_navigation"
+                                            >
+                                                <button
+                                                    class="circular_contact_cube_nav_btn"
+                                                    data-direction="front"
+                                                >
+                                                    <i
+                                                        class="fas fa-arrow-left"
+                                                    ></i>
+                                                    Back
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <!-- Cube Left Face - Sustainability Stats -->
+                                        <div
+                                            class="circular_contact_cube_face cube-left"
+                                        >
+                                            <h3
+                                                class="circular_contact_info_title"
+                                            >
+                                                Impact Statistics
+                                            </h3>
+
+                                            <div class="circular_contact_stats">
+                                                <div
+                                                    class="circular_contact_stat_item"
+                                                >
+                                                    <div
+                                                        class="circular_contact_stat_value"
+                                                        id="stat_waste"
+                                                    >
+                                                        <span
+                                                            class="circular_contact_stat_number"
+                                                            >0</span
+                                                        >
+                                                        <span
+                                                            class="circular_contact_stat_unit"
+                                                            >kg</span
+                                                        >
+                                                    </div>
+                                                    <div
+                                                        class="circular_contact_stat_label"
+                                                    >
+                                                        Waste Diverted
+                                                    </div>
+                                                    <div
+                                                        class="circular_contact_stat_bar"
+                                                    >
+                                                        <div
+                                                            class="circular_contact_stat_progress"
+                                                            data-percentage="85"
+                                                        ></div>
+                                                    </div>
+                                                </div>
+
+                                                <div
+                                                    class="circular_contact_stat_item"
+                                                >
+                                                    <div
+                                                        class="circular_contact_stat_value"
+                                                        id="stat_carbon"
+                                                    >
+                                                        <span
+                                                            class="circular_contact_stat_number"
+                                                            >0</span
+                                                        >
+                                                        <span
+                                                            class="circular_contact_stat_unit"
+                                                            >kg</span
+                                                        >
+                                                    </div>
+                                                    <div
+                                                        class="circular_contact_stat_label"
+                                                    >
+                                                        CO2 Emissions Prevented
+                                                    </div>
+                                                    <div
+                                                        class="circular_contact_stat_bar"
+                                                    >
+                                                        <div
+                                                            class="circular_contact_stat_progress"
+                                                            data-percentage="70"
+                                                        ></div>
+                                                    </div>
+                                                </div>
+
+                                                <div
+                                                    class="circular_contact_stat_item"
+                                                >
+                                                    <div
+                                                        class="circular_contact_stat_value"
+                                                        id="stat_clients"
+                                                    >
+                                                        <span
+                                                            class="circular_contact_stat_number"
+                                                            >0</span
+                                                        >
+                                                        <span
+                                                            class="circular_contact_stat_unit"
+                                                            >+</span
+                                                        >
+                                                    </div>
+                                                    <div
+                                                        class="circular_contact_stat_label"
+                                                    >
+                                                        Active Clients
+                                                    </div>
+                                                    <div
+                                                        class="circular_contact_stat_bar"
+                                                    >
+                                                        <div
+                                                            class="circular_contact_stat_progress"
+                                                            data-percentage="60"
+                                                        ></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                class="circular_contact_cube_navigation"
+                                            >
+                                                <button
+                                                    class="circular_contact_cube_nav_btn"
+                                                    data-direction="front"
+                                                >
+                                                    <i
+                                                        class="fas fa-arrow-left"
+                                                    ></i>
+                                                    Back
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <!-- Cube Right Face - FAQ -->
+                                        <div
+                                            class="circular_contact_cube_face cube-right"
+                                        >
+                                            <h3
+                                                class="circular_contact_info_title"
+                                            >
+                                                Quick FAQs
+                                            </h3>
+
+                                            <div
+                                                class="circular_contact_faq_list"
+                                            >
+                                                <div
+                                                    class="circular_contact_faq_item"
+                                                >
+                                                    <div
+                                                        class="circular_contact_faq_question"
+                                                    >
+                                                        How quickly can we
+                                                        implement your recycling
+                                                        program?
+                                                    </div>
+                                                    <div
+                                                        class="circular_contact_faq_answer"
+                                                    >
+                                                        Most clients are up and
+                                                        running within 2-3 weeks
+                                                        after the initial
+                                                        consultation.
+                                                    </div>
+                                                </div>
+
+                                                <div
+                                                    class="circular_contact_faq_item"
+                                                >
+                                                    <div
+                                                        class="circular_contact_faq_question"
+                                                    >
+                                                        How does the rebate
+                                                        system work?
+                                                    </div>
+                                                    <div
+                                                        class="circular_contact_faq_answer"
+                                                    >
+                                                        You receive financial
+                                                        credits for every
+                                                        kilogram of PPE
+                                                        recycled, which are
+                                                        applied to future
+                                                        purchases.
+                                                    </div>
+                                                </div>
+
+                                                <div
+                                                    class="circular_contact_faq_item"
+                                                >
+                                                    <div
+                                                        class="circular_contact_faq_question"
+                                                    >
+                                                        Can you customize the
+                                                        gloves for our specific
+                                                        industry?
+                                                    </div>
+                                                    <div
+                                                        class="circular_contact_faq_answer"
+                                                    >
+                                                        Yes, we offer
+                                                        customization options
+                                                        for different industries
+                                                        and requirements.
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                class="circular_contact_cube_navigation"
+                                            >
+                                                <button
+                                                    class="circular_contact_cube_nav_btn"
+                                                    data-direction="front"
+                                                >
+                                                    <i
+                                                        class="fas fa-arrow-left"
+                                                    ></i>
+                                                    Back
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="../crossFile/crossfile.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
